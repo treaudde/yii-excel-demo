@@ -1,0 +1,23 @@
+version: "3.7"
+services:
+  csv-api-backend:
+    container_name: csv-app
+    image: treaudde/simple-development-environment:latest
+    ports:
+      - "8080:80"
+    volumes:
+      - ./src:/var/www/html
+      - ./config/000-default.conf:/etc/apache2/sites-enabled/000-default.conf
+  csv-database:
+    container_name: csv-database
+    image: mysql:5
+    ports:
+      - "33066:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: root_password
+      MYSQL_DATABASE: csv
+      MYSQL_USER: csv
+      MYSQL_PASSWORD: insecure_password
+
+
+
