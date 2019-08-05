@@ -39,7 +39,7 @@ $this->registerJsFile('@web/js/canvasjs/canvasjs.min.js',
     </div>
 </div>
 
-<?php if(!is_null($chartData)): ?>
+<?php if(is_array($chartData)): ?>
 <div class="row">
     <div class="col-12">
         <div id="chartContainer" style="height: 600px; width: 100%;"></div>

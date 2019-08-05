@@ -5,6 +5,7 @@ http://3x.ralphharris3.com (username: neo / password: neo)
 1. Site created with Yii 2 Framework
 2. Uses: https://canvasjs.com/ for charts
 3. Uses: https://github.com/amnah/yii2-user for user authentication (bcrypt encryption).
+4. Uses https://phpspreadsheet.readthedocs.io/en/latest/ for spreadsheet parsing and processing.
 
 ## Files Modified for this project (documentation is in each file where appropriate)
 ```
